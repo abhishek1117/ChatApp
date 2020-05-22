@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CADD5E"
+    android:onClick="rootlayouttapped"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="218dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chat" />
+
+    <EditText
+        android:id="@+id/edtemaillogin"
+        android:layout_width="259dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="#A8B84D"
+        android:ems="10"
+        android:hint="Enter your Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edtpasswordlogin"
+        android:layout_width="258dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:background="#A8B84D"
+        android:ems="10"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemaillogin" />
+
+    <Button
+        android:id="@+id/btnsignuplogin"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:background="#397853"
+        android:text="Sign Up"
+        android:textColor="#FDFCFC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginlogin" />
+
+    <Button
+        android:id="@+id/btnloginlogin"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginRight="123dp"
+        android:background="#0E4902"
+        android:text="Login"
+        android:textColor="#FFFEFE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpasswordlogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
